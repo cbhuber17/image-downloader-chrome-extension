@@ -1,19 +1,15 @@
 <html>
   <head>
-    <link rel="stylesheet" href="style.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.4.1.js"
-      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"
-      type="text/javascript"
-    ></script>
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src 'self' https://somedomain.com/ 'unsafe-inline' 'unsafe-eval';  media-src *"
-    />
-    <script src="popup.js"></script>
+    <head>
+      <link rel="stylesheet" href="style.css" />
+      <script src="../jquery-3.4.1.min.js"></script>
+      <script src="popup.js"></script>
+    </head>
   </head>
   <body>
-    <button class="btn">Download All</button>
+    <div class="container">
+      <button id="download_all" class="btn">Download All</button>
+      <div class="gallery"></div>
+    </div>
   </body>
 </html>
